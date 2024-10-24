@@ -36,7 +36,7 @@ This project demonstrates best practices in React development, including secure 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Future Improvements and Next Steps](#future-improvements-and-next-steps)
-- [Note for Annd](#note-for-anna)
+- [Note for Anna](#note-for-anna)
 
 ## Installation
 
