@@ -357,3 +357,7 @@ Scalability and Maintainability
 7. Security suggestions - Although the login process is relatively secure, there is a risk that the refresh token may be stolen from the local storage using an XSS stub. It would be ideal to team up with backend colleagues and use an http-only cookie to store the token, which cannot be accessed by javascript.
    
 9. Design tips - There are a few elements in the design that are not centered, even though they look that way at first glance, this can cause confusion for the developer using the designs. At the same time, I would suggest meeting with design colleagues to discuss the contrast ratios of the components to make the application friendly to users with visual impairments.
+
+## Note for Anna
+
+Hi, I've been trying to get as much work done as possible before I go on vacation so the follow up should be relatively straightforward. I think the hardest thing to do is to modify the responseInterceptor in axiosInstance to correctly catch error conditions on the api. See if you can talk to the backend guys and see if they can set up some test endpoint that you can use to test the error catching. And be sure to do it as soon as possible, so you have enough time to do it. The other tasks should be easy, and you'll definitely be able to use the components I've prepared for all of them. Good luck and have fun :) 
