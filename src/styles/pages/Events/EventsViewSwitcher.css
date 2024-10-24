@@ -1,0 +1,5 @@
+.events-view-switcher {
+  cursor: pointer;
+  display: flex;
+  margin: auto 0;
+}

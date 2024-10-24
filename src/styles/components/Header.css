@@ -1,0 +1,53 @@
+.header {
+  flex-grow: 0;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 24px 24px 0;
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (min-width: 1440px) {
+    height: 40px;
+    padding: 31px 39px 0 43px;
+  }
+}
+
+.link {
+  display: flex;
+  height: 100%;
+  width: min-content;
+}
+
+.logo {
+  height: 22px;
+  margin: auto 0;
+
+  @media (min-width: 1440px) {
+    height: 28px;
+  }
+}
+
+.close {
+  display: flex;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+}
+
+.close-text {
+  font-size: 1rem;
+  margin: auto auto auto 8px;
+  color: var(--text-color);
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: inherit;
+  }
+}

@@ -1,0 +1,27 @@
+.login-info-wrapper {
+  width: 100%;
+  height: 70px;
+  margin: 0 auto;
+
+  .login-info {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    color: var(--text-hint-color);
+  }
+
+  .error-info {
+    color: var(--danger-color);
+  }
+
+  @media (min-width: 1440px) {
+    height: 78px;
+    margin: 0;
+
+    .login-info {
+      font-size: 1.125rem;
+      margin-top: 6px;
+    }
+  }
+}

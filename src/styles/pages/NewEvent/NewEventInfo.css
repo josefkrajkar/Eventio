@@ -1,0 +1,19 @@
+.new-event-info-wrapper {
+  width: 100%;
+}
+
+.new-event-info {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--text-hint-color);
+
+  @media (min-width: 1440px) {
+    font-size: 1.125rem;
+  }
+}
+
+.error-info {
+  color: var(--danger-color);
+}

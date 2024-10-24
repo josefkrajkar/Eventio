@@ -1,0 +1,12 @@
+.events-menu {
+  margin: 65px 0 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: 1440px) {
+    padding-left: 77px;
+    padding-right: 81px;
+    margin: 98px 0 39px;
+  }
+}

@@ -1,0 +1,24 @@
+:root {
+  --background-color: #fff;
+  --primary-color: #22D486;
+  --primary-focused-color: #20BD78;
+  --secondary-color: #323C46;
+  --secondary-focused-color: #565D5A;
+  --text-color: #323C46;
+  --text-hint-color: #949EA8;
+  --text-light-color: #C9CED3;
+  --border-color: #DAE1E7;
+  --input-label-color: #D2D6DA;
+  --horizontal-divider-color: #18E38B;
+  --danger-color: #FF4081;
+  --danger-focused-color: #E7326F;
+  --dashboard-background-color: #F9F9FB;
+  --avatar-background-color: #D9DCE1;
+  --events-menu-item-color: #A9AEB4;
+  --events-date-color: #CACDD0;
+  --events-capacity-color: #949EA8;
+  --events-athor-color: #7D7878;
+  --edit-btn-background-color: #D9DCE1;
+  --edit-btn-background-focused-color: #C4C9D1;
+  --edit-btn-text-color: #A9AEB4;
+}

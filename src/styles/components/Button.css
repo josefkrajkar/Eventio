@@ -1,0 +1,47 @@
+@import "../colors.css";
+
+.button {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: unset;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  cursor: pointer;
+  transition: background-color 0.25s;
+  width: 240px;
+  height: 57px;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: var(--primary-focused-color);
+}
+.button[disabled] {
+  cursor: not-allowed;
+}
+
+.button.small {
+  width: 100px;
+  height: 32px;
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+.button.danger {
+  background-color: var(--danger-color);
+}
+
+.button.danger:hover {
+  background-color: var(--danger-focused-color);
+}
+
+.button.edit {
+  background-color: var(--edit-btn-background-color);
+  color: var(--edit-btn-text-color);
+}
+
+.button.edit:hover {
+  background-color: var(--edit-btn-background-focused-color);
+}

@@ -1,0 +1,25 @@
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: scroll;
+  height: calc(100vh - 56px - 65px - 24px - 32px);
+
+  @media (min-width: 1440px) {
+    padding-left: 77px;
+    padding-right: 81px;
+    height: calc(100vh - 31px - 71px - 98px - 39px); 
+  }
+}
+
+.in-grid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px 15px;
+  justify-content: center;
+  align-content: flex-start;
+
+  @media (min-width: 1440px) {
+    justify-content: flex-start;
+  }
+}  

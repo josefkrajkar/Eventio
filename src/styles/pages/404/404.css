@@ -1,0 +1,47 @@
+.not-found-page {
+  margin: auto;
+  background-image: url('/images/pngs/Trooper-head.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  max-width: 320px;
+  height: 320px;
+
+  @media (min-width: 1440px) {
+    margin-left: -139px;
+    background-position: left;
+    max-width: 904px;
+    width: 904px;
+    height: 433px;
+  }
+}
+
+.not-found-info-wrapper {
+  margin: auto;
+  text-align: center;
+
+  @media (min-width: 1440px) {
+    margin: 117px auto auto 357px;
+    text-align: left;
+  }
+}
+
+.not-found-info {
+  font-size: 0.875rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 6px 0 0 0;
+  color: var(--text-hint-color);
+}
+
+.refresh-button {
+  margin-top: 40px;
+  background-color: var(--secondary-color);
+}
+.refresh-button:hover {
+  background-color: var(--secondary-focused-color);
+}
+
+.trooper-head-img {
+
+}

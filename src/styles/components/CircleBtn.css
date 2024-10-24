@@ -1,0 +1,20 @@
+.circle-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  color: var(--background-color);
+  border: 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+    0 6px 6px rgba(0, 0, 0, 0.15);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.circle-btn:hover {
+  background-color: var(--primary-focused-color);
+}

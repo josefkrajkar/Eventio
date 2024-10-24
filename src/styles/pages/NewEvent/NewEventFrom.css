@@ -1,0 +1,25 @@
+.new-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px 0 0;
+
+  @media (min-width: 1440px) {
+    margin: 40px 0 0;
+    gap: 39px;
+  }
+}
+
+.new-event-form-field {
+  height: 27px;
+  padding: 0 0 4px;
+
+  @media (min-width: 1440px) {
+    height: 27px;
+    padding: 0 0 5px;
+  }
+}
+
+.new-event-btn {
+  margin: 0 auto 0;
+}

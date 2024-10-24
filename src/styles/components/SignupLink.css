@@ -1,0 +1,30 @@
+.signup-link {
+  margin-top: 24px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--text-light-color);
+  display: flex;
+  justify-content: center;
+
+  .link {  
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--text-hint-color);
+    margin-left: 4px;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.in-header {
+  margin: auto 0;
+  display: none;
+  justify-content: left;
+
+  @media (min-width: 1440px) {
+    display: inherit;
+  }
+}

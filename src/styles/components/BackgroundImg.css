@@ -1,0 +1,50 @@
+.background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw / 3);
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  background-image: url('/images/pngs/Stormtroopers.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.quote-wrapper {
+  margin: auto auto 86px;
+  width: 310px;
+  height: 158px;
+  z-index: 1;
+  text-align: center;
+
+  hr {
+    background-color: var(--horizontal-divider-color);
+    width: 12px;
+    height: 2px;
+    border: none;
+    margin: 21px auto 0;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: var(--text-hint-color);
+    margin: 15px auto 0;
+  }
+
+  cite {
+    font-family: 'PlayfairDisplay';
+    font-style: normal;
+    font-size: 2.25rem;
+    line-height: 2.637rem;
+    color: var(--background-color);
+  }
+}

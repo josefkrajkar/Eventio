@@ -1,0 +1,15 @@
+.login-form {
+  margin-top: 48px;
+
+  @media (min-width: 1440px) {
+    margin-top: 64px;
+  }
+}
+
+.submit-btn {
+  margin-top: 40px;
+
+  @media (min-width: 1440px) {
+    margin-top: 64px;
+  }
+}

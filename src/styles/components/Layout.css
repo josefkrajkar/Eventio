@@ -1,0 +1,41 @@
+.layout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+
+  main {
+    flex-grow: 1;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 1440px) {
+      padding: 0 39px 0 43px;
+    }
+  }
+
+  .with-image {
+    @media (min-width: 1440px) {
+      padding: 0 0 0 33%;
+    }
+  }
+}
+
+.on-dashboard {
+  background-color: var(--dashboard-background-color);
+}
+
+.on-new-event {
+  main {
+    padding: 0 8px;
+  }
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}

@@ -1,0 +1,93 @@
+.profile-dropdown {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  border-radius: 50%;
+  background-color: var(--avatar-background-color);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-hint-color);
+  margin-right: 8px;
+  cursor: pointer;
+
+  @media (min-width: 1440px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.user-name {
+  display: none;
+  margin: auto 8px auto 0;
+  color: var(--text-hint-color);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+
+  @media (min-width: 1440px) {
+    display: inherit;
+  }
+}
+
+.arrow {
+  color: var(--avatar-background-color);
+  margin: auto 0;
+  transform: scaleY(0.7);
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 46px;
+  right: -15px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  min-width: 100px;
+  z-index: 10;
+  cursor: pointer;
+
+  @media (min-width: 1440px) {
+    width: 162px;
+  }
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 4px 16px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--avatar-background-color);
+  cursor: pointer;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
