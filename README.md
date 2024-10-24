@@ -346,4 +346,14 @@ Scalability and Maintainability
 
 ## Future Improvements and Next Steps
 
-1. Generic error 
+1. 500 page - According to the proposal, we need to add a page in case of an error on the server (e.g. we get an error with code 500 from the API). We can use a 404 error page that matches our needs. We will need to add a response interceptor to axiosInstance that will direct the user to this page in case of an error on the API. I would also recommend using this new page as a fallback in the Errorboundary component to catch critical application errors.
+
+2. Profile detail - The profile detail should be a simple page. Just modify the top part of the page with the user's initials as suggested, and below that the event sheet where we can use the one from the event listing page. The only thing to consider is that in order to filter the events efficiently, it would be ideal to add them to the event context through the userProfile using the useAuth hook.
+
+3. Event detail - In the event detail, we can use the event card, which we just slightly adjust the style to make it wider according to the needs of the viewport. We then create a small card with a list of all the participants of the event using labels.
+   
+5. Event edit - Editing an event will then just mean replacing the event card from the event detail with a form with values for that event. To work with the form, we can use the inputs that we already use when creating the event and I would use the same validation scheme here.
+   
+7. Security suggestions - Although the login process is relatively secure, there is a risk that the refresh token may be stolen from the local storage using an XSS stub. It would be ideal to team up with backend colleagues and use an http-only cookie to store the token, which cannot be accessed by javascript.
+   
+9. Design tips - There are a few elements in the design that are not centered, even though they look that way at first glance, this can cause confusion for the developer using the designs. At the same time, I would suggest meeting with design colleagues to discuss the contrast ratios of the components to make the application friendly to users with visual impairments.
