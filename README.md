@@ -353,11 +353,13 @@ Scalability and Maintainability
 
 3. Event detail - In the event detail, we can use the event card, which we just slightly adjust the style to make it wider according to the needs of the viewport. We then create a small card with a list of all the participants of the event using labels.
    
-5. Event edit - Editing an event will then just mean replacing the event card from the event detail with a form with values for that event. To work with the form, we can use the inputs that we already use when creating the event and I would use the same validation scheme here.
+4. Event edit - Editing an event will then just mean replacing the event card from the event detail with a form with values for that event. To work with the form, we can use the inputs that we already use when creating the event and I would use the same validation scheme here.
+
+5. Sign up - For the account creation page, use the same procedure as for creating an event. We create the UI by composing the form using the prepared inputs. For validation, we can use the same procedure to create a validation schema as we did for the event creation form.
    
-7. Security suggestions - Although the login process is relatively secure, there is a risk that the refresh token may be stolen from the local storage using an XSS stub. It would be ideal to team up with backend colleagues and use an http-only cookie to store the token, which cannot be accessed by javascript.
+6. Security suggestions - Although the login process is relatively secure, there is a risk that the refresh token may be stolen from the local storage using an XSS stub. It would be ideal to team up with backend colleagues and use an http-only cookie to store the token, which cannot be accessed by javascript.
    
-9. Design tips - There are a few elements in the design that are not centered, even though they look that way at first glance, this can cause confusion for the developer using the designs. At the same time, I would suggest meeting with design colleagues to discuss the contrast ratios of the components to make the application friendly to users with visual impairments.
+7. Design tips - There are a few elements in the design that are not centered, even though they look that way at first glance, this can cause confusion for the developer using the designs. At the same time, I would suggest meeting with design colleagues to discuss the contrast ratios of the components to make the application friendly to users with visual impairments.
 
 ## Note for Anna
 
