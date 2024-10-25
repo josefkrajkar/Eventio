@@ -24,11 +24,11 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <ErrorMsgProvider>
           <AuthProvider>
-            <EventsContextProvider>
-              <BrowserRouter>
+            <BrowserRouter>
+              <EventsContextProvider>
                 <Routes />
-              </BrowserRouter>
-            </EventsContextProvider>
+              </EventsContextProvider>
+            </BrowserRouter>
           </AuthProvider>
         </ErrorMsgProvider>
       </QueryClientProvider>
