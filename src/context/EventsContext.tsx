@@ -1,5 +1,6 @@
 import React, { createContext, useMemo, useEffect, useState, useCallback } from 'react'
 import { useMutation, useQuery, useQueryClient } from 'react-query'
+import { useNavigate } from 'react-router-dom'
 
 // Services
 import { eventsService } from "../services/events/eventsService"
@@ -37,6 +38,7 @@ export function EventsContextProvider ({ children }: { children: React.ReactNode
   const { setNewEventError } = useErrorMsg()
   const { data: events, error, isLoading } = useQuery<LocalEventType[]>(['events'], eventsService.fetchEvents)
   const { userProfile } = useAuth()
+  const navigate = useNavigate()
 
   const [view, setView] = useState<'grid' | 'list'>('grid')
   const [filter, setFilter] = useState<typeof EVENT_FILTERS[number]>('ALL')
@@ -78,6 +80,7 @@ export function EventsContextProvider ({ children }: { children: React.ReactNode
     {
       onSuccess: () => {
         queryClient.invalidateQueries(['events'])
+        navigate('/events')
       },
       onError: (error: Error) => {
         console.log("Error adding event: ", error)
