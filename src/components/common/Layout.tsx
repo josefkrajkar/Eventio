@@ -17,7 +17,7 @@ import { useAuth } from '../../hooks/useAuth'
 function Layout () {
   const {onDashboard, onNewEventPage, showBackgroundImg} = useLayoutRules()
   const { isLoading } = useEvents()
-  const { isAuthLoading } = useAuth()
+  const { isAuthenticated } = useAuth()
 
   return (
     <div className={
@@ -25,7 +25,7 @@ function Layout () {
     }>
       <BackgroundImg />
       {
-        (isLoading && !isAuthLoading) && (
+        (isLoading && isAuthenticated) && (
           <div className='loading-overlay'>
             <Loader darker larger />
           </div>

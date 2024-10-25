@@ -1,3 +1,5 @@
+import { useRef, useEffect, useState } from "react";
+
 // Components
 import EventBtn from "./EventBtn";
 
@@ -18,9 +20,53 @@ function EventRow (event: EventType) {
   const { showFullDate } = useLayoutRules()
   const {id, title, description, startsAt, attendees, capacity, owner} = event 
   const {firstName, lastName} = owner
+  const [isVisible, setIsVisible] = useState(false)
+
+  const eventRowRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (!isVisible) {
+              setIsVisible(true);
+            }
+          } else {
+            if (isVisible) {
+              setIsVisible(false);
+            }
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    );
+
+    if (eventRowRef.current) {
+      observer.observe(eventRowRef.current);
+    }
+
+    return () => {
+      if (eventRowRef.current) {
+        observer.unobserve(eventRowRef.current);
+      }
+    };
+  }, [id, isVisible]);
+
+  if (!isVisible) {
+    <div key={id} className='event-row' ref={eventRowRef} />
+  }
 
   return (
-    <div key={id} className='event-row'>
+    <div
+      key={id}
+      className='event-row'
+      ref={eventRowRef}
+    >
       <a href={`/events/${id}`} className='title'>
         <h2 className='title'>{title}</h2>
       </a>
