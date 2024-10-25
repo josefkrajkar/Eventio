@@ -15,7 +15,7 @@ function PrivateRoute ({ children }: PrivateRouteProps) {
   const { isAuthenticated, isAuthLoading } = useAuth()
 
   if (isAuthLoading) {
-    return <Loader />
+    return <Loader darker larger/>
   }
 
   if (!isAuthenticated) {

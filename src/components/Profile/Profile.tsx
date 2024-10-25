@@ -8,6 +8,10 @@ import { useAuth } from "../../hooks/useAuth";
 function Profile () {
   const { isAuthLoading, userProfile } = useAuth()
 
+  if (isAuthLoading) {
+    return null
+  }
+
   return (
     userProfile
     ? (
@@ -16,7 +20,6 @@ function Profile () {
     : (
       <SignupLink
         inHeader
-        disabled={isAuthLoading}
       />
     )
   )
