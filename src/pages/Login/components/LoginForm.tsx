@@ -78,9 +78,7 @@ function LoginForm () {
         />
 
         {/* Signup link */}
-        <SignupLink
-          disabled={isAuthLoading}
-        />
+        <SignupLink />
 
         {/* Submit Button */}
         <Button
