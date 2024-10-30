@@ -58,7 +58,7 @@ function EventRow (event: EventType) {
   }, [id, isVisible]);
 
   if (!isVisible) {
-    <div key={id} className='event-row' ref={eventRowRef} />
+    return <div key={id} className='event-row' ref={eventRowRef} />
   }
 
   return (

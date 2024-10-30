@@ -58,7 +58,7 @@ function EventCard (event: EventType) {
   }, [id, isVisible])
 
   if (!isVisible) {
-    <div key={id} className='event-card' ref={eventCardRef}/>
+    return <div key={id} className='event-card' ref={eventCardRef}/>
   }
 
   return (
